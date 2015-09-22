@@ -11,8 +11,12 @@
 		4A507D9E1BB10AB300CD8E49 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A507D9D1BB10AB300CD8E49 /* ViewController.swift */; };
 		4A507DA11BB10AB300CD8E49 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4A507D9F1BB10AB300CD8E49 /* Main.storyboard */; };
 		4A507DA31BB10AB300CD8E49 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4A507DA21BB10AB300CD8E49 /* Images.xcassets */; };
-		4A507DA61BB10AB300CD8E49 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4A507DA41BB10AB300CD8E49 /* LaunchScreen.xib */; };
 		4A507DB21BB10AB300CD8E49 /* FacebookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A507DB11BB10AB300CD8E49 /* FacebookTests.swift */; };
+		4A507DBD1BB1134800CD8E49 /* MsgViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A507DBC1BB1134800CD8E49 /* MsgViewController.swift */; };
+		4A507DBF1BB113B600CD8E49 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A507DBE1BB113B600CD8E49 /* HomeViewController.swift */; };
+		4A507DC11BB113EC00CD8E49 /* MoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A507DC01BB113EC00CD8E49 /* MoreViewController.swift */; };
+		4A507DC31BB113F900CD8E49 /* NotifyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A507DC21BB113F900CD8E49 /* NotifyViewController.swift */; };
+		4A507DC51BB1140500CD8E49 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A507DC41BB1140500CD8E49 /* RequestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,10 +36,14 @@
 		4A507D9D1BB10AB300CD8E49 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4A507DA01BB10AB300CD8E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4A507DA21BB10AB300CD8E49 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		4A507DA51BB10AB300CD8E49 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		4A507DAB1BB10AB300CD8E49 /* FacebookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FacebookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A507DB01BB10AB300CD8E49 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4A507DB11BB10AB300CD8E49 /* FacebookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacebookTests.swift; sourceTree = "<group>"; };
+		4A507DBC1BB1134800CD8E49 /* MsgViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MsgViewController.swift; sourceTree = "<group>"; };
+		4A507DBE1BB113B600CD8E49 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		4A507DC01BB113EC00CD8E49 /* MoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MoreViewController.swift; sourceTree = "<group>"; };
+		4A507DC21BB113F900CD8E49 /* NotifyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotifyViewController.swift; sourceTree = "<group>"; };
+		4A507DC41BB1140500CD8E49 /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +85,11 @@
 		4A507D981BB10AB300CD8E49 /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
+				4A507DBB1BB112DC00CD8E49 /* View Controllers */,
 				4A507D9B1BB10AB300CD8E49 /* AppDelegate.swift */,
 				4A507D9D1BB10AB300CD8E49 /* ViewController.swift */,
 				4A507D9F1BB10AB300CD8E49 /* Main.storyboard */,
 				4A507DA21BB10AB300CD8E49 /* Images.xcassets */,
-				4A507DA41BB10AB300CD8E49 /* LaunchScreen.xib */,
 				4A507D991BB10AB300CD8E49 /* Supporting Files */,
 			);
 			path = Facebook;
@@ -110,6 +118,18 @@
 				4A507DB01BB10AB300CD8E49 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4A507DBB1BB112DC00CD8E49 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4A507DBC1BB1134800CD8E49 /* MsgViewController.swift */,
+				4A507DBE1BB113B600CD8E49 /* HomeViewController.swift */,
+				4A507DC01BB113EC00CD8E49 /* MoreViewController.swift */,
+				4A507DC21BB113F900CD8E49 /* NotifyViewController.swift */,
+				4A507DC41BB1140500CD8E49 /* RequestViewController.swift */,
+			);
+			name = "View Controllers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -193,7 +213,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A507DA11BB10AB300CD8E49 /* Main.storyboard in Resources */,
-				4A507DA61BB10AB300CD8E49 /* LaunchScreen.xib in Resources */,
 				4A507DA31BB10AB300CD8E49 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -212,8 +231,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A507DC11BB113EC00CD8E49 /* MoreViewController.swift in Sources */,
+				4A507DC31BB113F900CD8E49 /* NotifyViewController.swift in Sources */,
+				4A507DC51BB1140500CD8E49 /* RequestViewController.swift in Sources */,
+				4A507DBD1BB1134800CD8E49 /* MsgViewController.swift in Sources */,
 				4A507D9E1BB10AB300CD8E49 /* ViewController.swift in Sources */,
 				4A507D9C1BB10AB300CD8E49 /* AppDelegate.swift in Sources */,
+				4A507DBF1BB113B600CD8E49 /* HomeViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,14 +266,6 @@
 				4A507DA01BB10AB300CD8E49 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		4A507DA41BB10AB300CD8E49 /* LaunchScreen.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4A507DA51BB10AB300CD8E49 /* Base */,
-			);
-			name = LaunchScreen.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -340,6 +356,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Facebook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +367,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Facebook/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";

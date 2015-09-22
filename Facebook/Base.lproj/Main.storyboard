@@ -1,25 +1,140 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7519.1" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="C38-Cb-fLO">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7513.1"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
-                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
-                    </layoutGuides>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="Facebook" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-790" y="-850"/>
+        </scene>
+        <!--Home-->
+        <scene sceneID="NPW-qs-4x9">
+            <objects>
+                <viewController id="3Ta-DW-Zwb" userLabel="Home" customClass="HomeViewController" customModule="Facebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="g8u-y3-jzF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.10795072681790019" green="0.93735482027137262" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Home" image="feed_tab" id="hRc-qk-uAb"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6lX-tm-0zf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-492" y="64"/>
+        </scene>
+        <!--More-->
+        <scene sceneID="OtY-Qn-qsn">
+            <objects>
+                <viewController id="ySf-uW-IBr" userLabel="More" customClass="MoreViewController" customModule="Facebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Khz-2N-blI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.39178249629072515" green="0.084164813860072463" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="More" image="more_tab" id="ZuI-qp-bhw"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SC7-08-F4o" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92" y="66"/>
+        </scene>
+        <!--Notify-->
+        <scene sceneID="lSV-06-N4A">
+            <objects>
+                <viewController id="WAP-VS-Nls" userLabel="Notify" customClass="NotifyViewController" customModule="Facebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xdi-gO-f7h">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.98964447130442867" green="1" blue="0.21280423353197986" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Notify" image="notifications_tab" id="yOg-fg-Cul"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kg5-Ss-fDg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="296" y="66"/>
+        </scene>
+        <!--Request-->
+        <scene sceneID="HCj-gE-XId">
+            <objects>
+                <viewController id="pPW-q9-Ui7" userLabel="Request" customClass="RequestViewController" customModule="Facebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vZA-QX-V9Z">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="mQr-66-knn">
+                                <rect key="frame" x="-7" y="0.0" width="335" height="519"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.094542288237485006" blue="0.22170904066203578" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Request" image="requests_tab" id="OOL-mZ-Ir7"/>
+                    <connections>
+                        <outlet property="scrollView" destination="mQr-66-knn" id="b4a-ek-7aD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DaL-a1-tBL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="684" y="62"/>
+        </scene>
+        <!--Msg-->
+        <scene sceneID="KaV-3B-j6R">
+            <objects>
+                <viewController id="BiY-cO-ThO" customClass="MsgViewController" customModule="Facebook" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ecX-jC-8EC" userLabel="Msg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.047726751856596361" green="0.66331812671907087" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Msg" image="messages_tab" id="b9P-ow-1FZ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fZ2-gL-0Dk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-900" y="64"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="vNp-83-Pq4">
+            <objects>
+                <tabBarController id="C38-Cb-fLO" sceneMemberID="viewController">
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="f5w-4I-EOv">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BiY-cO-ThO" kind="relationship" relationship="viewControllers" id="Bew-Ir-gue"/>
+                        <segue destination="3Ta-DW-Zwb" kind="relationship" relationship="viewControllers" id="7SM-Rb-Q2o"/>
+                        <segue destination="ySf-uW-IBr" kind="relationship" relationship="viewControllers" id="hPX-qU-lF6"/>
+                        <segue destination="WAP-VS-Nls" kind="relationship" relationship="viewControllers" id="3zi-2e-8UA"/>
+                        <segue destination="pPW-q9-Ui7" kind="relationship" relationship="viewControllers" id="IcA-WS-p54"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VLR-DP-W7i" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-92" y="-848"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="feed_tab" width="27" height="27"/>
+        <image name="messages_tab" width="27" height="27"/>
+        <image name="more_tab" width="27" height="27"/>
+        <image name="notifications_tab" width="27" height="27"/>
+        <image name="requests_tab" width="27" height="27"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
 </document>
