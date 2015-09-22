@@ -72,14 +72,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="mQr-66-knn">
-                                <rect key="frame" x="-7" y="0.0" width="335" height="519"/>
+                                <rect key="frame" x="0.0" y="64" width="320" height="504"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="top" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people" id="pgN-5r-LxX">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
                             </scrollView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nav" id="MqH-Ti-K9v">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.094542288237485006" blue="0.22170904066203578" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Request" image="requests_tab" id="OOL-mZ-Ir7"/>
                     <connections>
+                        <outlet property="requestsImageView" destination="pgN-5r-LxX" id="8CL-k3-atx"/>
                         <outlet property="scrollView" destination="mQr-66-knn" id="b4a-ek-7aD"/>
                     </connections>
                 </viewController>
@@ -129,7 +140,9 @@
         <image name="feed_tab" width="27" height="27"/>
         <image name="messages_tab" width="27" height="27"/>
         <image name="more_tab" width="27" height="27"/>
+        <image name="nav" width="320" height="64"/>
         <image name="notifications_tab" width="27" height="27"/>
+        <image name="people" width="320" height="1006"/>
         <image name="requests_tab" width="27" height="27"/>
     </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
