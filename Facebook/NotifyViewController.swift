@@ -10,11 +10,29 @@ import UIKit
 
 class NotifyViewController: UIViewController {
 
+    @IBOutlet weak var scrollView: UIScrollView!
+    
+    
+    @IBOutlet weak var notificationsView: UIImageView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        scrollView.contentSize = CGSizeMake(320, notificationsView.image!.size.height)
+        
+        
         // Do any additional setup after loading the view.
     }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        scrollView.contentInset.top = 0
+        scrollView.contentInset.bottom = 50
+        scrollView.scrollIndicatorInsets.top = 0
+        scrollView.scrollIndicatorInsets.bottom = 50
+    }
+
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
